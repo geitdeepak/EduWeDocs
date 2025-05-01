@@ -1,0 +1,49 @@
+site_name: EduWe
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: 'blue'
+      accent: 'light blue'
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: 'blue'
+      accent: 'light blue'
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - header.autohide
+    - content.code.copy
+    - content.action.edit
+    - content.tooltips
+
+extra:
+  generator: false  # Removes "Made with Material for MkDocs"
+  social:
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com
+      name: LinkedIn
+    - icon: fontawesome/brands/twitter
+      link: https://www.twitter.com
+      name: Twitter
+    - icon: fontawesome/brands/facebook
+      link: https://www.facebook.com
+      name: Facebook
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/@eduwe8400
+      name: YouTube
+    - icon: fontawesome/solid/envelope
+      link: mailto:info@ceekh.com
+      name: Email
+  footer: |
+    <div style="text-align: center; padding-top: 30px;">
+      <p style="font-size: 14px; color: #555; text-align: center;">© 2025 EduWe. All rights reserved. | Developed by Deepak Kumar Tyagi</p>
+    </div>
