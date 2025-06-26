@@ -16,10 +16,11 @@ theme:
         icon: material/weather-sunny
         name: Switch to light mode
 
-features:
+  features:
     - navigation.tabs
     - navigation.sections
     - navigation.top
+    - navigation.expand         # ✅ This enables collapsible sidebar menus
     - header.autohide
     - content.code.copy
     - content.action.edit
@@ -47,3 +48,52 @@ extra:
     <div style="text-align: center; padding-top: 30px;">
       <p style="font-size: 14px; color: #555; text-align: center;">© 2025 EduWe. All rights reserved. | Developed by Deepak Kumar Tyagi</p>
     </div>
+
+nav:
+  - Home: index.md
+  - Azure Labs:
+      - Overview: ./Azure/azure.md
+      - Lab-1 Manage Microsoft Entra ID Identities: ./Azure/LAB_01-Manage_Entra_ID_Identities.md
+      - Lab-2 Manage Subscriptions and RBAC : ./Azure/LAB_02a_Manage_Subscriptions_and_RBAC_Entra.md
+      - Lab-3 Manage Governance via Azure Policy: ./Azure/LAB_02b-Manage_Governance_via_Azure_Policy.md
+      - Lab-4 Manage Azure Resources by using Azure Resource Manager Templates: ./Azure/LAB_03b-Manage_Azure_Resources_by_Using_ARM_Templates.md
+      - Lab-5 Implement Virtual Networking: ./Azure/LAB_04-Implement_Virtual_Networking.md
+      - Lab-6 Implement Intersite Connectivity: ./Azure/LAB_05-Implement_Intersite_Connectivity.md
+      - Lab-7 Implement Network Traffic Management: ./Azure/LAB_06-Implement_Network_Traffic_Management.md
+      - Lab-8 Manage Azure Storage: ./Azure/LAB_07-Manage_Azure_Storage.md
+      - Lab-9 Manage Virtual Machines: ./Azure/LAB_08-Manage_Virtual_Machines.md
+      - Lab-10 Implement Web Apps: ./Azure/LAB_09a-Implement_Web_Apps.md
+      - Lab-11 Implement Azure Container Instances (ACI): ./Azure/LAB_09b-Implement_Azure_Container_Instances.md
+      - Lab-12 Implement Azure Container Apps: ./Azure/LAB_09c-Implement-Azure-Container-Apps.md
+      - Lab-13 Implement Data Protection: ./Azure/LAB_10-Implement_Data_Protection.md
+      - Lab-14 Implement Monitoring: ./Azure/LAB_11-Implement_Monitoring.md
+
+  - AWS Labs:
+      - Overview: ./AWS/aws-overview.md
+      - Lab-1: ./AWS/aws-lab1.md
+      - Lab-2: ./AWS/aws-lab2.md
+      - Lab-3: ./AWS/aws-lab3.md
+  - GCP Labs:
+      - Overview: ./GCP/gcp-overview.md
+      - Lab-1: ./GCP/gcp-lab1.md
+      - Lab-2: ./GCP/gcp-lab2.md
+  - Troubleshooting:
+      - Azure Troubleshooting Guide: ./Azure/azure-trouble.md
+      - AWS Troubleshooting Guide: ./AWS/aws-trouble.md
+      - GCP Troubleshooting Guide: ./GCP/gcp-trouble.md
+  - Blogs: 
+      - Role of Cloud Computing in Software Developer Life: ./Blogs/blog1.md
+      - Cloud Computing's Impact on Businesses: ./Blogs/blog2.md
+      - Deployment of WebApp Using Azure App Service: ./Blogs/blog3.md
+      - Load Distribution Using Azure Load Balancer: ./Blogs/blog4.md
+      - Best Practices for Designing Secure Azure Solutions: ./Blogs/blog5.md
+      - Choosing the Right Cloud Platform for Your Needs: ./Blogs/blog6.md
+      - Introduction to Azure Security and Compliance: ./Blogs/blog7.md
+  - Contact Us: contact.md
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - admonition
+  - codehilite
+  - tables
