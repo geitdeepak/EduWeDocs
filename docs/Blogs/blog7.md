@@ -1,7 +1,8 @@
 
 # 🛡️ **Introduction to Azure Security and Compliance**
+<div><center><img src="/media/blog79.png" alt="Security" style="max-width: 250px; height: auto;"/></center></div>
 
-<div><center><strong>[Building Trust, One Secure Cloud at a Time]</strong></center><br></div>
+<div><center><strong>[Building Trust, One Secure Cloud at a Time]</strong></center></div>
 
 In today’s digital world, security and compliance are not optional—they're **essential**. Whether you're hosting a simple web app or managing sensitive business data in the cloud, protecting it is your top priority.
 

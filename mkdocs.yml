@@ -89,6 +89,9 @@ nav:
       - Best Practices for Designing Secure Azure Solutions: ./Blogs/blog5.md
       - Choosing the Right Cloud Platform for Your Needs: ./Blogs/blog6.md
       - Introduction to Azure Security and Compliance: ./Blogs/blog7.md
+      - Understanding Computer Networks-The Digital Nervous System: ./Blogs/blog8.md
+      - Understanding the OSI Model-The Blueprint of Modern Networking: ./Blogs/blog9.md
+      - Cloud Computing-The Backbone of Modern IT Education: ./Blogs/blog10.md
   - Contact Us: contact.md
 
 markdown_extensions:
