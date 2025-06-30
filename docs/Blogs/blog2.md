@@ -12,7 +12,7 @@ Cloud computing has moved from a tech buzzword to a **strategic necessity**. It 
 
 **The Cloud Solution:** Coca-Cola adopted **Microsoft Azure**, utilizing **Azure Kubernetes Service (AKS)** to manage app deployments and **Power BI** to visualize real-time customer data.
 
-![Coca Cola Solutions Architecture](/media/blog24.png)
+![Coca Cola Solutions Architecture](../media/blog24.png)
 
 **The Result:** With a modern cloud backbone, Coca-Cola reduced campaign rollout time from weeks to days, empowering local teams to respond faster to market trends.
 
@@ -26,7 +26,7 @@ Cloud computing has moved from a tech buzzword to a **strategic necessity**. It 
 
 **The Cloud Solution:** Netflix built its entire backend on **Amazon Web Services (AWS)**, using auto-scaling and load balancing to handle varying demands in real time.
 
-![Netflix Solutions Architecture](/media/blog23.png)
+![Netflix Solutions Architecture](../media/blog23.png)
 
 **The Result:** The platform now delivers uninterrupted streaming to **200+ million users**, regardless of how many people tune in at once.
 
@@ -40,7 +40,7 @@ Cloud computing has moved from a tech buzzword to a **strategic necessity**. It 
 
 **The Cloud Solution:** Siemens used **Azure IoT Hub** to collect sensor data from industrial machines and **Azure Machine Learning** to predict faults and maintenance schedules.
 
-![Innovation at Siemens Architecture](/media/blog22.png)
+![Innovation at Siemens Architecture](../media/blog22.png)
 
 **The Result:** Their clients cut equipment downtime by 30%, improving operational efficiency and saving costs. Siemens created a scalable, AI-powered solution without heavy capital investment.
 
@@ -58,7 +58,7 @@ Moreover, cloud ensures business continuity through **automatic backups**, **geo
 
 **Example:** Small businesses using **Azure Backup** or **Amazon S3** easily restored operations after ransomware attacks or power failures—something that would’ve taken weeks in a traditional setup.
 
-![Small Business Example](/media/blog21.png)
+![Small Business Example](../media/blog21.png)
 
 ----
 
@@ -72,8 +72,8 @@ So if your organization is still relying on legacy systems, ask yourself: **Is i
 
 ----
 <div style="text-align: center; padding-top: 30px;">
-  <img src="/media/logo.png" alt="EduWe Logo" style="max-width: 150px; height: auto;"/>
-  
+  <img src="/images/logo.png" alt="EduWe Logo" style="max-width: 150px; height: auto;">
+  <p>
   <center><strong>Ceekh Edunix Pvt Ltd</strong></center><br>
     Address: H-34, Ground Floor, Sector 63, Noida, Uttar Pradesh<br>
     Email: <a href="mailto:info@ceekh.com" style="color: #007bff;">info@ceekh.com</a>

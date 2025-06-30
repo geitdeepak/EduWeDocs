@@ -3,7 +3,7 @@
 In today’s digital-first world, computing is no longer confined to bulky desktops or university labs. It has moved into an invisible yet omnipresent realm—the **cloud**. For academic institutions, particularly those focused on computer science, IT, business, or engineering, **Cloud Computing** is not just a buzzword—it's an essential component of modern curriculum and research.
 
 <div style="text-align: center; padding-top: 00px;">
-  <img src="/media/blog101.png" alt="clt" style="max-width: 650px; height: auto;"/>
+  <img src="/images/blog101.png" alt="clt" style="max-width: 650px; height: auto;"/>
 </div>
 
 This blog aims to give a comprehensive overview of Cloud Computing in the context of an academic course, highlighting key concepts, service models, deployment strategies, and practical use cases relevant for students and educators alike.
@@ -17,7 +17,7 @@ Cloud Computing refers to the **on-demand delivery of computing services**—inc
 > In academic terms, Cloud Computing is a model that enables **ubiquitous, convenient, on-demand network access** to a shared pool of configurable computing resources.
 
 <div style="text-align: center; padding-top: 00px;">
-  <img src="/media/blog102.png" alt="clt" style="max-width: 650px; height: auto;"/>
+  <img src="/images/blog102.png" alt="clt" style="max-width: 650px; height: auto;"/>
 </div>
 ---
 
@@ -36,7 +36,7 @@ Access to virtual machines, data lakes, and cloud AI services empower students t
 ## 🔍 Benefits of Cloud Computing 
 
 <div style="text-align: center; padding-top: 00px;">
-  <img src="/media/blog104.jpg" alt="clt" style="max-width: 650px; height: auto;"/>
+  <img src="/images/blog104.jpg" alt="clt" style="max-width: 650px; height: auto;"/>
 </div>
 
 ## 🔍 Core Concepts Covered in a Cloud Computing Course
@@ -66,7 +66,7 @@ Delivers ready-to-use software over the web.
 📧 *Example: Using Microsoft 365 for assignments and communication.*
 
 <div style="text-align: center; padding-top: 00px;">
-  <img src="/media/blog103.png" alt="clt" style="max-width: 650px; height: auto;"/>
+  <img src="/images/blog103.png" alt="clt" style="max-width: 650px; height: auto;"/>
 </div>
 
 ---
@@ -129,8 +129,8 @@ Cloud computing is no longer an elective—it’s a core subject that shapes the
 
 ---
 <div style="text-align: center; padding-top: 30px;">
-  <img src="/media/logo.png" alt="EduWe Logo" style="max-width: 150px; height: auto;"/>
-  
+  <img src="/images/logo.png" alt="EduWe Logo" style="max-width: 150px; height: auto;">
+  <p>
   <center><strong>Ceekh Edunix Pvt Ltd</strong></center><br>
     Address: H-34, Ground Floor, Sector 63, Noida, Uttar Pradesh<br>
     Email: <a href="mailto:info@ceekh.com" style="color: #007bff;">info@ceekh.com</a>

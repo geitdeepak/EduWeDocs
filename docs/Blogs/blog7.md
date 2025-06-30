@@ -8,7 +8,7 @@ In today’s digital world, security and compliance are not optional—they're *
 
 Microsoft Azure offers a robust set of **security and compliance tools** that make it easier for organizations and developers to build secure cloud environments. In this blog, we’ll take a hands-on look at key services like **Azure Security Center**, **Defender for Cloud**, **RBAC**, **Identity Protection**, and **Compliance Manager**.
 
-![analogy](/media/blog71.png)
+![analogy](../media/blog71.png)
 
 Let’s walk through it step-by-step.
 
@@ -27,7 +27,7 @@ When you move to the cloud:
 Azure follows the **Shared Responsibility Model**:  
 > Microsoft secures the **cloud platform**, and **you** secure what you put inside it—your apps, data, and access.
 
-![Azure Security](/media/blog72.png)
+![Azure Security](../media/blog72.png)
 
 ---
 
@@ -41,7 +41,7 @@ A **security baseline** in Azure is like a checklist of recommended configuratio
 - Under *Regulatory Compliance*, select a standard (e.g., Azure Security Benchmark).
 - Azure will show you **which resources are compliant**, and where action is needed.
 
-![Security](/media/blog73.png)
+![Security](../media/blog73.png)
 
 ---
 
@@ -59,7 +59,7 @@ Giving everyone full admin access is a recipe for disaster. Enter **RBAC**—a s
 
 A developer needs access to only a storage account. Instead of giving them full access to the whole resource group, you assign the **Storage Blob Data Contributor** role to just that resource.
 
-![rbac](/media/blog74.png)
+![rbac](../media/blog74.png)
 
 ---
 
@@ -78,7 +78,7 @@ A developer needs access to only a storage account. Instead of giving them full 
 - Go to **Azure AD > Security > Identity Protection**
 - View risky users, sign-ins, and configure risk-based policies
 
-![ad](/media/blog75.png)
+![ad](../media/blog75.png)
 
 ---
 
@@ -96,7 +96,7 @@ A developer needs access to only a storage account. Instead of giving them full 
 
 If a virtual machine is missing endpoint protection, Defender will flag it and suggest installing Microsoft Antimalware or another solution.
 
-![score](/media/blog76.png)
+![score](../media/blog76.png)
 
 ---
 
@@ -110,7 +110,7 @@ Worried about **GDPR**, **ISO 27001**, or **HIPAA**?
 - Shows improvement actions
 - Helps track your progress toward certification
 
-![cm](/media/blog77.png)
+![cm](../media/blog77.png)
 
 🧭 Try this:
 
@@ -118,7 +118,7 @@ Worried about **GDPR**, **ISO 27001**, or **HIPAA**?
 - Select a compliance framework (e.g., NIST)
 - Review your assessment dashboard
 
-![MPCM](/media/blog78.png)
+![MPCM](../media/blog78.png)
 
 ---
 
@@ -147,8 +147,8 @@ Learning by doing is the best way to master cloud security!
 
 ---
 <div style="text-align: center; padding-top: 30px;">
-  <img src="/media/logo.png" alt="EduWe Logo" style="max-width: 150px; height: auto;"/>
-  
+  <img src="/images/logo.png" alt="EduWe Logo" style="max-width: 150px; height: auto;">
+  <p>
   <center><strong>Ceekh Edunix Pvt Ltd</strong></center><br>
     Address: H-34, Ground Floor, Sector 63, Noida, Uttar Pradesh<br>
     Email: <a href="mailto:info@ceekh.com" style="color: #007bff;">info@ceekh.com</a>

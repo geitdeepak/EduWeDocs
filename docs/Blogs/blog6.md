@@ -1,13 +1,13 @@
 
 # 🌩️ **Choosing the Right Cloud Platform for Your Needs**  
 
-![Logo](/media/blog61.png)![Logo](/media/blog62.png)![Logo](/media/blog63.png)
+![Logo](../media/blog61.png)![Logo](../media/blog62.png)![Logo](../media/blog63.png)
 ### _Azure vs AWS vs GCP: Which One Is Right for You?_
 
 Imagine you're planning a road trip. You wouldn’t just pick a vehicle randomly—you’d choose based on how many passengers you're carrying, the type of road, fuel efficiency, and comfort.  
 **Choosing a cloud platform is exactly like that.**
 
-![analogy](/media/blog64.png)
+![analogy](../media/blog64.png)
 
 In this blog, we’ll explore how to choose between the **top three cloud platforms**—**Microsoft Azure**, **Amazon Web Services (AWS)**, and **Google Cloud Platform (GCP)**—based on your needs, project goals, and ecosystem preferences.
 
@@ -15,7 +15,7 @@ In this blog, we’ll explore how to choose between the **top three cloud platfo
 
 ## 🧭 Step 1: Understand the Decision Criteria
 
-![decision](/media/blog65.png)
+![decision](../media/blog65.png)
 
 **Before you pick a cloud, ask yourself:**
 
@@ -109,7 +109,7 @@ Think of cloud platforms like smartphone brands:
 - **AWS = Android for Developers**: Open, massive features, but can be overwhelming at first.
 - **GCP = iPhone for Data Lovers**: Sleek, intuitive, and built for intelligent features.
 
-![analogy](/media/blog66.png)
+![analogy](../media/blog66.png)
 
 All three are excellent—it depends on what **you** value most.
 
@@ -140,8 +140,8 @@ Exploring Azure, AWS, and GCP side-by-side will give you the edge to make **conf
 
 ---
 <div style="text-align: center; padding-top: 30px;">
-  <img src="/media/logo.png" alt="EduWe Logo" style="max-width: 150px; height: auto;"/>
-  
+  <img src="/images/logo.png" alt="EduWe Logo" style="max-width: 150px; height: auto;">
+  <p>
   <center><strong>Ceekh Edunix Pvt Ltd</strong></center><br>
     Address: H-34, Ground Floor, Sector 63, Noida, Uttar Pradesh<br>
     Email: <a href="mailto:info@ceekh.com" style="color: #007bff;">info@ceekh.com</a>

@@ -4,7 +4,7 @@ In today’s cloud-native world, deploying a web application shouldn’t feel li
 
 Let’s walk through how you can deploy a sample web application from GitHub or your local machine using Azure App Service—and take it further with deployment slots, auto-scaling, and monitoring through Application Insights.
 
-![architecture](/media/blog36.png)
+![architecture](../media/blog36.png)
 
 ---
 
@@ -34,11 +34,11 @@ Let’s deploy a sample web application (e.g., a basic Node.js or Python app) fr
 1. **Login to Azure Portal**  
    - Visit [portal.azure.com](https://portal.azure.com)  
 
-   ![Login](/media/blog31.png)
+   ![Login](../media/blog31.png)
 
    - Go to “App Services” > Click **“Create”**
 
-   ![create weapp](/media/blog32.png)
+   ![create weapp](../media/blog32.png)
 
 2. **Fill in the App Details**  
    - Resource Group: `MyWebApp-RG`  
@@ -72,7 +72,7 @@ Azure allows you to create **deployment slots**—separate environments for stag
 3. Name it `staging`, choose to clone settings from the production slot  
 4. Deploy your app to `staging`, test it, and then **swap** when ready
  
- ![slots](/media/blog34.png)
+ ![slots](../media/blog34.png)
 ---
 ## 📈 Enable Auto-Scaling
 
@@ -83,7 +83,7 @@ Don’t let success crash your app! Azure App Service lets you scale automatical
 2. Choose a scaling rule (e.g., scale out if CPU > 70%)  
 3. Define minimum and maximum instances
 
- ![scaling](/media/blog35.png)
+ ![scaling](../media/blog35.png)
 
 Azure will now manage the scaling for you—keeping performance smooth even under pressure.
 
@@ -107,7 +107,7 @@ You can’t fix what you can’t measure. With **Application Insights**, you can
 
 ### Browse Final deployed WebApp in your any Browser:
 
- ![webapp](/media/blog33.png)
+ ![webapp](../media/blog33.png)
 ## 💡 Final Thoughts
 
 Deploying a web application is just the beginning—but doing it with Azure App Service means you’re future-ready from day one.
@@ -120,8 +120,8 @@ So whether you're pushing your first web app or launching something for millions
 
 ----
 <div style="text-align: center; padding-top: 30px;">
-  <img src="/media/logo.png" alt="EduWe Logo" style="max-width: 150px; height: auto;"/>
-  
+  <img src="/images/logo.png" alt="EduWe Logo" style="max-width: 150px; height: auto;">
+  <p>
   <center><strong>Ceekh Edunix Pvt Ltd</strong></center><br>
     Address: H-34, Ground Floor, Sector 63, Noida, Uttar Pradesh<br>
     Email: <a href="mailto:info@ceekh.com" style="color: #007bff;">info@ceekh.com</a>

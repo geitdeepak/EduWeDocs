@@ -4,7 +4,7 @@ In today’s digital world, **security is no longer optional**—it’s the foun
 
 Microsoft Azure offers a comprehensive set of security features—but knowing when and how to use them effectively is key. This blog walks you through **core best practices** like firewalls, NSGs, RBAC, managed identities, and Microsoft’s built-in recommendations so that your cloud architecture stays secure, scalable, and compliant.
 
-![Security](/media/blog51.png)
+![Security](../media/blog51.png)
 
 ---
 
@@ -29,7 +29,7 @@ Azure resources like **Storage Accounts**, **Key Vaults**, and **SQL Databases**
 - **Deny public access by default** — Use private endpoints when possible.
 - **Enable logging** to track access attempts.
 
-![Firewall](/media/blog52.png)
+![Firewall](../media/blog52.png)
 
 🧪 ***Example:*** For Azure Storage, disable “Allow All Networks” and explicitly whitelist the backend subnet or developer workstation IPs.
 
@@ -44,7 +44,7 @@ Azure resources like **Storage Accounts**, **Key Vaults**, and **SQL Databases**
 - Use **least privilege**—only open required ports (e.g., 443, 22).
 - Monitor NSG rules regularly for unnecessary openings.
 
-![Security](/media/blog53.png)
+![Security](../media/blog53.png)
 
 🔒 ***Example:*** Block all inbound traffic except port 443 for your App Gateway subnet.
 
@@ -59,7 +59,7 @@ Azure resources like **Storage Accounts**, **Key Vaults**, and **SQL Databases**
 - **Avoid assigning at the subscription level**—use Resource Groups for scoped access.
 - **Review access logs** regularly using Azure Activity Logs or Defender for Cloud.
 
-![Security](/media/blog54.png)
+![Security](../media/blog54.png)
 
 👨‍💻 ***Example:*** Give your app developer team “Contributor” role only on the WebApp resource group—not the whole subscription.
 
@@ -74,7 +74,7 @@ Instead of storing secrets in code, **Managed Identities** allow Azure services 
 - Use it to authenticate to **Key Vault, Azure SQL, Storage**, etc.
 - Avoid using hard-coded credentials or storing secrets in config files.
 
-![Security](/media/blog55.png)
+![Security](../media/blog55.png)
 
 🔑 ***Example:*** An App Service accesses a Key Vault secret using its managed identity—no password needed, and it rotates automatically.
 
@@ -92,7 +92,7 @@ Azure provides security recommendations via:
 - Enable **Just-In-Time VM access** to reduce attack surface.
 - Use **Defender for Endpoint and Defender for Identity** for advanced protection.
 
-![Security](/media/blog56.png)
+![Security](../media/blog56.png)
 
 📈 ***Example:*** If Security Center recommends enabling encryption at rest on a storage account—apply it immediately using the Azure Policy.
 
@@ -108,8 +108,8 @@ So, whether you're developing your first Azure app or managing a production envi
 
 ---
 <div style="text-align: center; padding-top: 30px;">
-  <img src="/media/logo.png" alt="EduWe Logo" style="max-width: 150px; height: auto;"/>
-  
+  <img src="/images/logo.png" alt="EduWe Logo" style="max-width: 150px; height: auto;">
+  <p>
   <center><strong>Ceekh Edunix Pvt Ltd</strong></center><br>
     Address: H-34, Ground Floor, Sector 63, Noida, Uttar Pradesh<br>
     Email: <a href="mailto:info@ceekh.com" style="color: #007bff;">info@ceekh.com</a>

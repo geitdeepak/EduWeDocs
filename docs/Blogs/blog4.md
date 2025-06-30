@@ -16,7 +16,7 @@ Azure Load Balancer is a **Layer 4 (TCP/UDP) load balancer** that automatically 
 - **Basic Load Balancer**: Ideal for dev/test or single-region apps.
 - **Standard Load Balancer**: Production-ready, secure, and zone-redundant—supports more features like higher scalability and metrics.
 
-![Public Load Balancer](/media/blog44.png)
+![Public Load Balancer](../media/blog44.png)
 
 ---
 
@@ -24,7 +24,7 @@ Azure Load Balancer is a **Layer 4 (TCP/UDP) load balancer** that automatically 
 
 Imagine a busy restaurant with several servers. A host greets each guest and decides which table (server) they should go to, depending on who’s available and how busy they are. Azure Load Balancer does the same—it receives incoming traffic and forwards it to the least busy and healthy backend instance.
 
-![Analogy](/media/blog41.png)
+![Analogy](../media/blog41.png)
 
 ---
 
@@ -61,7 +61,7 @@ Rules that define how incoming traffic is distributed. You can control port mapp
    - Public or Internal (based on your use case)
 4. Choose your Resource Group and Region
 
-![Create Load Balancer](/media/blog45.png)
+![Create Load Balancer](../media/blog45.png)
 
 ---
 
@@ -71,7 +71,7 @@ Rules that define how incoming traffic is distributed. You can control port mapp
 2. Click **Add**
 3. Select the virtual machines (VM1, VM2...) you want to include
 
-![backend pool](/media/blog42.png)
+![backend pool](../media/blog42.png)
 
 ---
 
@@ -93,7 +93,7 @@ Rules that define how incoming traffic is distributed. You can control port mapp
    - Session persistence (optional)
    - Associate with health probe and backend pool
 
-![healthprobe](/media/blog43.png)
+![healthprobe](../media/blog43.png)
 
 ---
 ### 🌐 Step 5: Install IIS on Azure Virtual Machines
@@ -147,7 +147,7 @@ Repeat **steps 1 to 8** to install IIS and the updated iisstart.htm file on **VM
 2. Azure will route requests to available healthy VMs
 3. Stop one VM and reload—traffic is redirected to the healthy one (thanks to health probes!)
 
-![Test Load Balancer](/media/blog46.png)
+![Test Load Balancer](../media/blog46.png)
 
 ---
 
@@ -171,8 +171,8 @@ So go ahead—deploy your VMs, configure Azure Load Balancer, and let the cloud 
 
 ----
 <div style="text-align: center; padding-top: 30px;">
-  <img src="/media/logo.png" alt="EduWe Logo" style="max-width: 150px; height: auto;"/>
-  
+  <img src="/images/logo.png" alt="EduWe Logo" style="max-width: 150px; height: auto;">
+  <p>
   <center><strong>Ceekh Edunix Pvt Ltd</strong></center><br>
     Address: H-34, Ground Floor, Sector 63, Noida, Uttar Pradesh<br>
     Email: <a href="mailto:info@ceekh.com" style="color: #007bff;">info@ceekh.com</a>

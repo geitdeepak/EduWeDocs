@@ -1,0 +1,2762 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../LAB_07-Manage_Azure_Storage/">
+      
+      
+        <link rel="next" href="../LAB_09a-Implement_Web_Apps/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>Lab-9 Manage Virtual Machines - EduWe</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="light-blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#lab-manage-virtual-machines" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="EduWe" class="md-header__button md-logo" aria-label="EduWe" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            EduWe
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Lab-9 Manage Virtual Machines
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="light-blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="light-blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../azure/" class="md-tabs__link">
+          
+  
+  
+  Azure Labs
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../AWS/aws-overview/" class="md-tabs__link">
+          
+  
+  
+  AWS Labs
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../GCP/gcp-overview/" class="md-tabs__link">
+          
+  
+  
+  GCP Labs
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../azure-trouble/" class="md-tabs__link">
+          
+  
+  
+  Troubleshooting
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../Blogs/blog1/" class="md-tabs__link">
+          
+  
+  
+  Blogs
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../contact/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Contact Us
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="EduWe" class="md-nav__button md-logo" aria-label="EduWe" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    EduWe
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Azure Labs
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Azure Labs
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../azure/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../LAB_01-Manage_Entra_ID_Identities/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Lab-1 Manage Microsoft Entra ID Identities
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../LAB_02a_Manage_Subscriptions_and_RBAC_Entra/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Lab-2 Manage Subscriptions and RBAC
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../LAB_02b-Manage_Governance_via_Azure_Policy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Lab-3 Manage Governance via Azure Policy
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../LAB_03b-Manage_Azure_Resources_by_Using_ARM_Templates/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Lab-4 Manage Azure Resources by using Azure Resource Manager Templates
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../LAB_04-Implement_Virtual_Networking/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Lab-5 Implement Virtual Networking
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../LAB_05-Implement_Intersite_Connectivity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Lab-6 Implement Intersite Connectivity
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../LAB_06-Implement_Network_Traffic_Management/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Lab-7 Implement Network Traffic Management
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../LAB_07-Manage_Azure_Storage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Lab-8 Manage Azure Storage
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Lab-9 Manage Virtual Machines
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Lab-9 Manage Virtual Machines
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#lab-introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lab Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estimated-timing-50-minutes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Estimated Timing: 50 Minutes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lab-scenario" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lab Scenario
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interactive-lab-simulations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interactive Lab Simulations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#job-skills" class="md-nav__link">
+    <span class="md-ellipsis">
+      Job Skills
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-virtual-machines-architecture-diagram" class="md-nav__link">
+    <span class="md-ellipsis">
+      Azure Virtual Machines Architecture Diagram
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-1-deploy-zone-resilient-azure-virtual-machines-by-using-the-azure-portal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Task 1: Deploy zone-resilient Azure Virtual Machines by using the Azure Portal
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-2-manage-compute-and-storage-scaling-for-virtual-machines" class="md-nav__link">
+    <span class="md-ellipsis">
+      Task 2: Manage Compute and Storage Scaling for Virtual Machines
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-virtual-machine-scale-sets-architecture-diagram" class="md-nav__link">
+    <span class="md-ellipsis">
+      Azure Virtual Machine Scale Sets Architecture Diagram
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-3-create-and-configure-azure-virtual-machine-scale-sets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Task 3: Create and configure Azure Virtual Machine Scale Sets
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-4-scale-azure-virtual-machine-scale-sets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Task 4: Scale Azure Virtual Machine Scale Sets
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-5-create-a-virtual-machine-using-azure-powershell-option-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Task 5: Create a Virtual Machine using Azure PowerShell (option 1)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-6-create-a-virtual-machine-using-the-cli-option-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Task 6: Create a Virtual Machine using the CLI (option 2)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cleanup-your-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cleanup your Resources
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../LAB_09a-Implement_Web_Apps/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Lab-10 Implement Web Apps
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../LAB_09b-Implement_Azure_Container_Instances/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Lab-11 Implement Azure Container Instances (ACI)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../LAB_09c-Implement-Azure-Container-Apps/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Lab-12 Implement Azure Container Apps
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../LAB_10-Implement_Data_Protection/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Lab-13 Implement Data Protection
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../LAB_11-Implement_Monitoring/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Lab-14 Implement Monitoring
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    AWS Labs
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            AWS Labs
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../AWS/aws-overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../AWS/aws-lab1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Lab-1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../AWS/aws-lab2.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Lab-2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../AWS/aws-lab3.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Lab-3
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    GCP Labs
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            GCP Labs
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../GCP/gcp-overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../GCP/gcp-lab1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Lab-1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../GCP/gcp-lab2.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Lab-2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Troubleshooting
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Troubleshooting
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../azure-trouble/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Azure Troubleshooting Guide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../AWS/aws-trouble/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    AWS Troubleshooting Guide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../GCP/gcp-trouble/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    GCP Troubleshooting Guide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Blogs
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Blogs
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Blogs/blog1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Role of Cloud Computing in Software Developer Life
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Blogs/blog2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cloud Computing's Impact on Businesses
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Blogs/blog3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Deployment of WebApp Using Azure App Service
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Blogs/blog4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Load Distribution Using Azure Load Balancer
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Blogs/blog5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Best Practices for Designing Secure Azure Solutions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Blogs/blog6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Choosing the Right Cloud Platform for Your Needs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Blogs/blog7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introduction to Azure Security and Compliance
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Blogs/blog8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Understanding Computer Networks-The Digital Nervous System
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Blogs/blog9/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Understanding the OSI Model-The Blueprint of Modern Networking
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Blogs/blog10/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cloud Computing-The Backbone of Modern IT Education
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Contact Us
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#lab-introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lab Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estimated-timing-50-minutes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Estimated Timing: 50 Minutes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lab-scenario" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lab Scenario
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interactive-lab-simulations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interactive Lab Simulations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#job-skills" class="md-nav__link">
+    <span class="md-ellipsis">
+      Job Skills
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-virtual-machines-architecture-diagram" class="md-nav__link">
+    <span class="md-ellipsis">
+      Azure Virtual Machines Architecture Diagram
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-1-deploy-zone-resilient-azure-virtual-machines-by-using-the-azure-portal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Task 1: Deploy zone-resilient Azure Virtual Machines by using the Azure Portal
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-2-manage-compute-and-storage-scaling-for-virtual-machines" class="md-nav__link">
+    <span class="md-ellipsis">
+      Task 2: Manage Compute and Storage Scaling for Virtual Machines
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-virtual-machine-scale-sets-architecture-diagram" class="md-nav__link">
+    <span class="md-ellipsis">
+      Azure Virtual Machine Scale Sets Architecture Diagram
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-3-create-and-configure-azure-virtual-machine-scale-sets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Task 3: Create and configure Azure Virtual Machine Scale Sets
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-4-scale-azure-virtual-machine-scale-sets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Task 4: Scale Azure Virtual Machine Scale Sets
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-5-create-a-virtual-machine-using-azure-powershell-option-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Task 5: Create a Virtual Machine using Azure PowerShell (option 1)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-6-create-a-virtual-machine-using-the-cli-option-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Task 6: Create a Virtual Machine using the CLI (option 2)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cleanup-your-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cleanup your Resources
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="lab-manage-virtual-machines">Lab - Manage Virtual Machines<a class="headerlink" href="#lab-manage-virtual-machines" title="Permanent link">&para;</a></h1>
+<hr />
+<h2 id="lab-introduction">Lab Introduction<a class="headerlink" href="#lab-introduction" title="Permanent link">&para;</a></h2>
+<p>In this lab, you create and compare virtual machines to virtual machine scale sets. You learn how to create, configure and resize a single virtual machine. You learn how to create a virtual machine scale set and configure autoscaling.</p>
+<p>This lab requires an Azure subscription. Your subscription type may affect the availability of features in this lab. You may change the region, but the steps are written using <strong>East US</strong>.</p>
+<h2 id="estimated-timing-50-minutes">Estimated Timing: 50 Minutes<a class="headerlink" href="#estimated-timing-50-minutes" title="Permanent link">&para;</a></h2>
+<h2 id="lab-scenario">Lab Scenario<a class="headerlink" href="#lab-scenario" title="Permanent link">&para;</a></h2>
+<p>Adamantus Technologies wants to explore deploying and configuring Azure virtual machines. First, you implement an Azure virtual machine with manual scaling. Next, you implement a Virtual Machine Scale Set and explore autoscaling.</p>
+<h2 id="interactive-lab-simulations">Interactive Lab Simulations<a class="headerlink" href="#interactive-lab-simulations" title="Permanent link">&para;</a></h2>
+<p>There are interactive lab simulations that you might find useful for this topic. The simulation lets you to click through a similar scenario at your own pace. There are differences between the interactive simulation and this lab, but many of the core concepts are the same. An Azure subscription is not required.</p>
+<ul>
+<li>
+<p><a href="https://mslearn.cloudguides.com/en-us/guides/AZ-900%20Exam%20Guide%20-%20Azure%20Fundamentals%20Exercise%201">Create a Virtual Machine in the Portal</a>. Create a virtual machine, connect and install the web server role.</p>
+</li>
+<li>
+<p><a href="https://mslearn.cloudguides.com/en-us/guides/AZ-900%20Exam%20Guide%20-%20Azure%20Fundamentals%20Exercise%209">Deploy a Virtual Machine with a Template</a>. Explore the QuickStart gallery and locate a virtual machine template. Deploy the template and verify the deployment.</p>
+</li>
+<li>
+<p><a href="https://mslearn.cloudguides.com/en-us/guides/AZ-900%20Exam%20Guide%20-%20Azure%20Fundamentals%20Exercise%2010">Create a Virtual Machine with PowerShell</a>. Use Azure PowerShell to deploy a virtual machine. Review Azure Advisor recommendations.</p>
+</li>
+<li>
+<p><a href="https://mslearn.cloudguides.com/en-us/guides/AZ-900%20Exam%20Guide%20-%20Azure%20Fundamentals%20Exercise%2011">Create a Virtual Machine with the CLI</a>. Use the CLI to deploy a virtual machine. Review Azure Advisor recommendations.</p>
+</li>
+</ul>
+<h2 id="job-skills">Job Skills<a class="headerlink" href="#job-skills" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Task 1: Deploy zone-resilient Azure virtual machines by using the Azure portal.</strong></li>
+<li><strong>Task 2: Manage compute and storage scaling for virtual machines.</strong></li>
+<li><strong>Task 3: Create and configure Azure Virtual Machine Scale Sets.</strong></li>
+<li><strong>Task 4: Scale Azure Virtual Machine Scale Sets.</strong></li>
+<li><strong>Task 5: Create a virtual machine using Azure PowerShell (optional 1).</strong></li>
+<li><strong>Task 6: Create a virtual machine using the CLI (optional 2).</strong></li>
+</ul>
+<h2 id="azure-virtual-machines-architecture-diagram">Azure Virtual Machines Architecture Diagram<a class="headerlink" href="#azure-virtual-machines-architecture-diagram" title="Permanent link">&para;</a></h2>
+<p><img alt="Diagram of the vm architecture tasks." src="../../media/az104-lab08-vm-architecture.png" /></p>
+<h2 id="task-1-deploy-zone-resilient-azure-virtual-machines-by-using-the-azure-portal">Task 1: Deploy zone-resilient Azure Virtual Machines by using the Azure Portal<a class="headerlink" href="#task-1-deploy-zone-resilient-azure-virtual-machines-by-using-the-azure-portal" title="Permanent link">&para;</a></h2>
+<p>In this task, you will deploy two Azure virtual machines into different availability zones by using the Azure portal. Availability zones offer the highest level of uptime SLA for virtual machines at 99.99%. To achieve this SLA, you must deploy at least two virtual machines across different availability zones.</p>
+<ol>
+<li>
+<p>Sign in to the Azure portal - <code>https://portal.azure.com</code>.</p>
+</li>
+<li>
+<p>Search for and select <code>Virtual machines</code>, on the <strong>Virtual machines</strong> blade, click <strong>+ Create</strong>, and then select in the drop-down <strong>Azure virtual machine</strong>. Notice your other choices.</p>
+</li>
+<li>
+<p>On the <strong>Basics</strong> tab, in the <strong>Availability zone</strong> drop down menu, place a checkmark next to <strong>Zone 2</strong>. This should select both <strong>Zone 1</strong> and <strong>Zone 2</strong>.</p>
+<blockquote>
+<p><strong>Note</strong>: This will deploy two virtual machines in the selected region, one in each zone. You achieve the 99.99% uptime SLA because you have at least two VMs distributed across at least two zones. In the scenario where you might only need one VM, it is a best practice to still deploy the VM to another zone.</p>
+</blockquote>
+</li>
+<li>
+<p>On the Basics tab, continue completing the configuration:</p>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Subscription</td>
+<td>the name of your Azure subscription</td>
+</tr>
+<tr>
+<td>Resource group</td>
+<td><strong>az104-rg8</strong> (If necessary, click <strong>Create new</strong>)</td>
+</tr>
+<tr>
+<td>Virtual machine names</td>
+<td><code>az104-vm1</code> and <code>az104-vm2</code> (After selecting both availability zones, select <strong>Edit names</strong> under the VM name field.)</td>
+</tr>
+<tr>
+<td>Region</td>
+<td><strong>East US</strong></td>
+</tr>
+<tr>
+<td>Availability options</td>
+<td><strong>Availability zone</strong></td>
+</tr>
+<tr>
+<td>Availability zone</td>
+<td><strong>Zone 1, 2</strong> (read the note about using virtual machine scale sets)</td>
+</tr>
+<tr>
+<td>Security type</td>
+<td><strong>Standard</strong></td>
+</tr>
+<tr>
+<td>Image</td>
+<td><strong>Windows Server 2019 Datacenter - x64 Gen2</strong></td>
+</tr>
+<tr>
+<td>Azure Spot instance</td>
+<td><strong>unchecked</strong></td>
+</tr>
+<tr>
+<td>Size</td>
+<td><strong>Standard D2s v3</strong></td>
+</tr>
+<tr>
+<td>Username</td>
+<td><code>localadmin</code></td>
+</tr>
+<tr>
+<td>Password</td>
+<td><strong>Provide a secure password</strong></td>
+</tr>
+<tr>
+<td>Public inbound ports</td>
+<td><strong>None</strong></td>
+</tr>
+<tr>
+<td>Would you like to use an existing Windows Server license?</td>
+<td><strong>Unchecked</strong></td>
+</tr>
+</tbody>
+</table>
+<p><img alt="Screenshot of the create vm page." src="../../media/az104-lab08-create-vm.png" /></p>
+</li>
+<li>
+<p>Click <strong>Next : Disks &gt;</strong> , specify the following settings (leave others with their default values):</p>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OS disk type</td>
+<td><strong>Premium SSD</strong></td>
+</tr>
+<tr>
+<td>Delete with VM</td>
+<td><strong>checked</strong> (default)</td>
+</tr>
+<tr>
+<td>Enable Ultra Disk compatibility</td>
+<td><strong>Unchecked</strong></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>Click <strong>Next : Networking &gt;</strong> take the defaults but do not provide a load balancer.</p>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Delete public IP and NIC when VM is deleted</td>
+<td><strong>Checked</strong></td>
+</tr>
+<tr>
+<td>Load balancing options</td>
+<td><strong>None</strong></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>Click <strong>Next : Management &gt;</strong> and specify the following settings (leave others with their default values):</p>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Patch orchestration options</td>
+<td><strong>Azure orchestrated</strong></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>Click <strong>Next : Monitoring &gt;</strong> and specify the following settings (leave others with their default values):</p>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Boot diagnostics</td>
+<td><strong>Disable</strong></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>Click <strong>Next : Advanced &gt;</strong>, take the defaults, then click <strong>Review + Create</strong>.</p>
+</li>
+<li>
+<p>After the validation, click <strong>Create</strong>.</p>
+<blockquote>
+<p><strong>Note:</strong> Notice as the virtual machine deploys the NIC, disk, and public IP address (if configured) are independently created and managed resources.</p>
+</blockquote>
+</li>
+<li>
+<p>Wait for the deployment to complete, then select <strong>Go to resource</strong>.</p>
+</li>
+</ol>
+<blockquote>
+<p><strong>Note:</strong> Monitor the <strong>Notification</strong> messages.</p>
+</blockquote>
+<h2 id="task-2-manage-compute-and-storage-scaling-for-virtual-machines">Task 2: Manage Compute and Storage Scaling for Virtual Machines<a class="headerlink" href="#task-2-manage-compute-and-storage-scaling-for-virtual-machines" title="Permanent link">&para;</a></h2>
+<p>In this task, you will scale a virtual machine by adjusting its size to a different SKU. Azure provides flexibility in VM size selection so that you can adjust a VM for periods of time if it needs more (or less) compute and memory allocated. This concept is extended to disks, where you can modify the performance of the disk, or increase the allocated capacity.</p>
+<ol>
+<li>
+<p>On the <strong>az104-vm1</strong> virtual machine, in the <strong>Availability + scale</strong> blade, select <strong>Size</strong>.</p>
+</li>
+<li>
+<p>Set the virtual machine size to <strong>D2ds_v4</strong> and click <strong>Resize</strong>. When prompted, confirm the change.</p>
+<blockquote>
+<p><strong>Note</strong>: Choose another size if <strong>D2ds_v4</strong> is not available. Resizing is also known as vertical scaling, up or down.</p>
+</blockquote>
+<p><img alt="Screenshot of the resize the virtual machine." src="../../media/az104-lab08-resize-vm.png" /></p>
+</li>
+<li>
+<p>In the <strong>Settings</strong> area, select <strong>Disks</strong>.</p>
+</li>
+<li>
+<p>Under <strong>Data disks</strong> select <strong>+ Create and attach a new disk</strong>. Configure the settings (leave other settings at their default values).</p>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Disk name</td>
+<td><code>vm1-disk1</code></td>
+</tr>
+<tr>
+<td>Storage type</td>
+<td><strong>Standard HDD</strong></td>
+</tr>
+<tr>
+<td>Size (GiB)</td>
+<td><code>32</code></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>Click <strong>Apply</strong>.</p>
+</li>
+<li>
+<p>After the disk has been created, click <strong>Detach</strong> (if necessary, scroll to the right to view the detach icon), and then click <strong>Apply</strong>.</p>
+<blockquote>
+<p><strong>Note</strong>: Detaching removes the disk from the VM but keeps it in storage for later use.</p>
+</blockquote>
+</li>
+<li>
+<p>Search for and select <code>Disks</code>. From the list of disks, select the <strong>vm1-disk1</strong> object.</p>
+<blockquote>
+<p><strong>Note:</strong> The <strong>Overview</strong> blade also provides performance and usage information for the disk.</p>
+</blockquote>
+</li>
+<li>
+<p>In the <strong>Settings</strong> blade, select <strong>Size + performance</strong>.</p>
+</li>
+<li>
+<p>Set the storage type to <strong>Standard SSD</strong>, and then click <strong>Save</strong>.</p>
+</li>
+<li>
+<p>Navigate back to the <strong>az104-vm1</strong> virtual machine and select <strong>Disks</strong>.</p>
+</li>
+<li>
+<p>In the <strong>Data disk</strong> section, select <strong>Attach existing disks</strong>.</p>
+</li>
+<li>
+<p>In the <strong>Disk name</strong> drop-down, select <strong>VM1-DISK1</strong>. </p>
+</li>
+<li>
+<p>Verify the disk is now <strong>Standard SSD</strong>.</p>
+</li>
+<li>
+<p>Select <strong>Apply</strong> to save your changes. </p>
+<blockquote>
+<p><strong>Note:</strong> You have now created a virtual machine, scaled the SKU and the data disk size. In the next task we use Virtual Machine Scale Sets to automate the scaling process.</p>
+</blockquote>
+</li>
+</ol>
+<h2 id="azure-virtual-machine-scale-sets-architecture-diagram">Azure Virtual Machine Scale Sets Architecture Diagram<a class="headerlink" href="#azure-virtual-machine-scale-sets-architecture-diagram" title="Permanent link">&para;</a></h2>
+<p><img alt="Diagram of the vmss architecture tasks." src="../../media/az104-lab08-vmss-architecture.png" /></p>
+<h2 id="task-3-create-and-configure-azure-virtual-machine-scale-sets">Task 3: Create and configure Azure Virtual Machine Scale Sets<a class="headerlink" href="#task-3-create-and-configure-azure-virtual-machine-scale-sets" title="Permanent link">&para;</a></h2>
+<p>In this task, you will deploy an Azure virtual machine scale set across availability zones. VM Scale Sets reduce the administrative overhead of automation by enabling you to configure metrics or conditions that allow the scale set to horizontally scale, scale in or scale out.</p>
+<ol>
+<li>
+<p>In the Azure portal, search for and select <code>Virtual machine scale sets</code> and, on the <strong>Virtual machine scale sets</strong> blade, click <strong>+ Create</strong>.</p>
+</li>
+<li>
+<p>On the <strong>Basics</strong> tab of the <strong>Create a virtual machine scale set</strong> blade, specify the following settings (leave others with their default values) and click <strong>Next : Spot &gt;</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Subscription</td>
+<td>the name of your Azure subscription</td>
+</tr>
+<tr>
+<td>Resource group</td>
+<td><strong>az104-rg8</strong></td>
+</tr>
+<tr>
+<td>Virtual machine scale set name</td>
+<td><code>vmss1</code></td>
+</tr>
+<tr>
+<td>Region</td>
+<td><strong>(US)East US</strong></td>
+</tr>
+<tr>
+<td>Availability zone</td>
+<td><strong>Zones 1, 2, 3</strong></td>
+</tr>
+<tr>
+<td>Orchestration mode</td>
+<td><strong>Uniform</strong></td>
+</tr>
+<tr>
+<td>Security type</td>
+<td><strong>Standard</strong></td>
+</tr>
+<tr>
+<td>Scaling options</td>
+<td><strong>Review and take the defaults</strong>. We will change this in the next task.</td>
+</tr>
+<tr>
+<td>Image</td>
+<td><strong>Windows Server 2019 Datacenter - x64 Gen2</strong></td>
+</tr>
+<tr>
+<td>Run with Azure Spot discount</td>
+<td><strong>Unchecked</strong></td>
+</tr>
+<tr>
+<td>Size</td>
+<td><strong>Standard D2s_v3</strong></td>
+</tr>
+<tr>
+<td>Username</td>
+<td><code>localadmin</code></td>
+</tr>
+<tr>
+<td>Password</td>
+<td><strong>Provide a secure password</strong></td>
+</tr>
+<tr>
+<td>Already have a Windows Server license?</td>
+<td><strong>Unchecked</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Note</strong>: For the list of Azure regions which support deployment of Windows virtual machines to availability zones, refer to <a href="https://docs.microsoft.com/en-us/azure/availability-zones/az-overview">What are Availability Zones in Azure?</a></p>
+</blockquote>
+<p><img alt="Screenshot of the create vmss page. " src="../../media/az104-lab08-create-vmss.png" /></p>
+</li>
+<li>
+<p>On the <strong>Spot</strong> tab, accept the defaults and select <strong>Next : Disks &gt;</strong>.</p>
+</li>
+<li>
+<p>On the <strong>Disks</strong> tab, accept the default values and click <strong>Next : Networking &gt;</strong>.</p>
+</li>
+<li>
+<p>On the <strong>Networking</strong> page, select <strong>Edit virtual network</strong> link. Make a few changes. When finished, select <strong>OK</strong>.</p>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td><code>vmss-vnet</code></td>
+</tr>
+<tr>
+<td>Address range</td>
+<td><code>10.82.0.0/20</code> (delete the existing address range)</td>
+</tr>
+<tr>
+<td>Subnet name</td>
+<td><code>subnet0</code></td>
+</tr>
+<tr>
+<td>Subnet range</td>
+<td><code>10.82.0.0/24</code></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>In the <strong>Networking</strong> tab, click the <strong>Edit network interface</strong> icon to the right of the network interface entry.</p>
+</li>
+<li>
+<p>For <strong>NIC network security group</strong> section, select <strong>Advanced</strong> and then click <strong>Create new</strong> under the <strong>Configure network security group</strong> drop-down list.</p>
+</li>
+<li>
+<p>On the <strong>Create network security group</strong> blade, specify the following settings (leave others with their default values):</p>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td><strong>vmss1-nsg</strong></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>Click <strong>Add an inbound rule</strong> and add an inbound security rule with the following settings (leave others with their default values):</p>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Source</td>
+<td><strong>Any</strong></td>
+</tr>
+<tr>
+<td>Source port ranges</td>
+<td>*</td>
+</tr>
+<tr>
+<td>Destination</td>
+<td><strong>Any</strong></td>
+</tr>
+<tr>
+<td>Service</td>
+<td><strong>HTTP</strong></td>
+</tr>
+<tr>
+<td>Action</td>
+<td><strong>Allow</strong></td>
+</tr>
+<tr>
+<td>Priority</td>
+<td><strong>1010</strong></td>
+</tr>
+<tr>
+<td>Name</td>
+<td><code>allow-http</code></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>Click <strong>Add</strong> and, back on the <strong>Create network security group</strong> blade, click <strong>OK</strong>.</p>
+</li>
+<li>
+<p>In the <strong>Edit network interface</strong> blade, in the <strong>Public IP address</strong> section, click <strong>Enabled</strong> and click <strong>OK</strong>.</p>
+</li>
+<li>
+<p>In the <strong>Networking</strong> tab, under the <strong>Load balancing</strong> section, specify the following (leave others with their default values).</p>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Load balancing options</td>
+<td><strong>Azure load balancer</strong></td>
+</tr>
+<tr>
+<td>Select a load balancer</td>
+<td><strong>Create a load balancer</strong></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>On the <strong>Create a load balancer</strong> page, specify the load balancer name and take the defaults. Click <strong>Create</strong> when you are done then <strong>Next : Management &gt;</strong>.</p>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Load balancer name</td>
+<td><code>vmss-lb</code></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Note:</strong> Pause for a minute and review what you done. At this point, you have configured the virtual machine scale set with disks and networking. In the network configuration you have created a network security group and allowed HTTP. You have also created a load balancer with a public IP address.</p>
+</blockquote>
+</li>
+<li>
+<p>On the <strong>Management</strong> tab, specify the following settings (leave others with their default values):</p>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Boot diagnostics</td>
+<td><strong>Disable</strong></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>Click <strong>Next : Health &gt;</strong>.</p>
+</li>
+<li>
+<p>On the <strong>Health</strong> tab, review the default settings without making any changes and click <strong>Next : Advanced &gt;</strong>.</p>
+</li>
+<li>
+<p>On the <strong>Advanced</strong> tab, click <strong>Review + create</strong>.</p>
+</li>
+<li>
+<p>On the <strong>Review + create</strong> tab, ensure that the validation passed and click <strong>Create</strong>.</p>
+<blockquote>
+<p><strong>Note</strong>: Wait for the virtual machine scale set deployment to complete. This should take approximately 5 minutes. </p>
+</blockquote>
+</li>
+</ol>
+<h2 id="task-4-scale-azure-virtual-machine-scale-sets">Task 4: Scale Azure Virtual Machine Scale Sets<a class="headerlink" href="#task-4-scale-azure-virtual-machine-scale-sets" title="Permanent link">&para;</a></h2>
+<p>In this task, you scale the virtual machine scale set using a custom scale rule.</p>
+<ol>
+<li>
+<p>Select <strong>Go to resource</strong> or search for and select the <strong>vmss1</strong> scale set.</p>
+</li>
+<li>
+<p>Choose <strong>Availability + Scale</strong> from the left side menu, then choose <strong>Scaling</strong>.</p>
+<blockquote>
+<p><strong>Did you know?</strong> You can <strong>Manual scale</strong> or <strong>Custom autoscale</strong>. In scale sets with a small number of VM instances, increasing or decreasing the instance count (Manual scale) may be best. In scale sets with a large number of VM instances, scaling based on metrics (Custom autoscale) may be more appropriate.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>Scale out Rule</strong></p>
+<ol>
+<li>
+<p>Select <strong>Custom autoscale</strong>. Then change the <strong>Scale mode</strong> to <strong>Scale based on metric</strong>. And then select <strong>Add a rule</strong>.</p>
+</li>
+<li>
+<p>Let's create a rule that automatically increases the number of VM instances. This rule scales out when the average CPU load is greater than 70% over a 10-minute period. When the rule triggers, the number of VM instances is increased by 50%.</p>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Metric source</td>
+<td><strong>Current resource (vmss1)</strong></td>
+</tr>
+<tr>
+<td>Metric namespace</td>
+<td><strong>Virtual Machine Host</strong></td>
+</tr>
+<tr>
+<td>Metric name</td>
+<td><strong>Percentage CPU</strong> (review your other choices)</td>
+</tr>
+<tr>
+<td>Operator</td>
+<td><strong>Greater than</strong></td>
+</tr>
+<tr>
+<td>Metric threshold to trigger scale action</td>
+<td><strong>70</strong></td>
+</tr>
+<tr>
+<td>Duration (minutes)</td>
+<td><strong>10</strong></td>
+</tr>
+<tr>
+<td>Time grain statistic</td>
+<td><strong>Average</strong></td>
+</tr>
+<tr>
+<td>Operation</td>
+<td><strong>Increase percent by</strong> (review other choices)</td>
+</tr>
+<tr>
+<td>Cool down (minutes)</td>
+<td><strong>5</strong></td>
+</tr>
+<tr>
+<td>Percentage</td>
+<td><strong>50</strong></td>
+</tr>
+</tbody>
+</table>
+<p><img alt="Screenshot of the scaling add rule page." src="../../media/az104-lab08-scale-rule.png" /></p>
+</li>
+<li>
+<p>Be sure to <strong>Save</strong> your changes.</p>
+</li>
+</ol>
+<p><strong>Scale in Rule</strong></p>
+<ol>
+<li>
+<p>During evenings or weekends, demand may decrease so it is important to create a scale in rule.</p>
+</li>
+<li>
+<p>Let's create a rule that decreases the number of VM instances in a scale set. The number of instances should decrease when the average CPU load drops below 30% over a 10-minute period. When the rule triggers, the number of VM instances is decreased by 20%.</p>
+</li>
+<li>
+<p>Select <strong>Add a rule</strong>, adjust the settings, then select <strong>Add</strong>.</p>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Operator</td>
+<td><strong>Less than</strong></td>
+</tr>
+<tr>
+<td>Threshold</td>
+<td><strong>30</strong></td>
+</tr>
+<tr>
+<td>Operation</td>
+<td><strong>decrease percentage by</strong> (review your other choices)</td>
+</tr>
+<tr>
+<td>Percentage</td>
+<td><strong>50</strong></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>Be sure to <strong>Save</strong> your changes.</p>
+</li>
+</ol>
+<p><strong>Set the instance limits</strong></p>
+<ol>
+<li>
+<p>When your autoscale rules are applied, instance limits make sure that you do not scale out beyond the maximum number of instances or scale in beyond the minimum number of instances.</p>
+</li>
+<li>
+<p><strong>Instance limits</strong> are shown on the <strong>Scaling</strong> page after the rules.</p>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Minimum</td>
+<td><strong>2</strong></td>
+</tr>
+<tr>
+<td>Maximum</td>
+<td><strong>10</strong></td>
+</tr>
+<tr>
+<td>Default</td>
+<td><strong>2</strong></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>Be sure to <strong>Save</strong> your changes</p>
+</li>
+<li>
+<p>On the <strong>vmss1</strong> page, select <strong>Instances</strong>. This is where you would monitor the number of virtual machine instances.</p>
+<blockquote>
+<p><strong>Note:</strong> If you are interested in using Azure PowerShell for virtual machine creation, try Task 5. If you are interested in using the CLI to create virtual machines, try Task 6.</p>
+</blockquote>
+</li>
+</ol>
+<h2 id="task-5-create-a-virtual-machine-using-azure-powershell-option-1">Task 5: Create a Virtual Machine using Azure PowerShell (option 1)<a class="headerlink" href="#task-5-create-a-virtual-machine-using-azure-powershell-option-1" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p>Use the icon (top right) to launch a <strong>Cloud Shell</strong> session. Alternately, navigate directly to <code>https://shell.azure.com</code>.</p>
+</li>
+<li>
+<p>Be sure to select <strong>PowerShell</strong>. If necessary, configure the shell storage.</p>
+</li>
+<li>
+<p>Run the following command to create a virtual machine. When prompted, provide a username and password for the VM. While you wait check out the <a href="https://learn.microsoft.com/powershell/module/az.compute/new-azvm?view=azps-11.1.0">New-AzVM</a> command reference for all the parameters associated with creating a virtual machine.</p>
+<p><code>powershell
+New-AzVm `
+-ResourceGroupName 'az104-rg8' `
+-Name 'myPSVM' `
+-Location 'East US' `
+-Image 'Win2019Datacenter' `
+-Zone '1' `
+-Size 'Standard_D2s_v3' `
+-Credential (Get-Credential)</code></p>
+</li>
+<li>
+<p>Once the command completes, use <strong>Get-AzVM</strong> to list the virtual machines in your resource group.</p>
+<p><code>powershell
+Get-AzVM `
+-ResourceGroupName 'az104-rg8' `
+-Status</code></p>
+</li>
+<li>
+<p>Verify your new virtual machine is listed and the <strong>Status</strong> is <strong>Running</strong>.</p>
+</li>
+<li>
+<p>Use <strong>Stop-AzVM</strong> to deallocate your virtual machine. Type <strong>Yes</strong> to confirm.</p>
+<p><code>powershell
+Stop-AzVM `
+-ResourceGroupName 'az104-rg8' `
+-Name 'myPSVM'</code></p>
+</li>
+<li>
+<p>Use <strong>Get-AzVM</strong> with the <strong>-Status</strong> parameter to verify the machine is <strong>deallocated</strong>.</p>
+<blockquote>
+<p><strong>Did you know?</strong> When you use Azure to stop your virtual machine, the status is <em>deallocated</em>. This means that any non-static public IPs are released, and you stop paying for the VM’s compute costs.</p>
+</blockquote>
+</li>
+</ol>
+<h2 id="task-6-create-a-virtual-machine-using-the-cli-option-2">Task 6: Create a Virtual Machine using the CLI (option 2)<a class="headerlink" href="#task-6-create-a-virtual-machine-using-the-cli-option-2" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p>Use the icon (top right) to launch a <strong>Cloud Shell</strong> session. Alternately, navigate directly to <code>https://shell.azure.com</code>.</p>
+</li>
+<li>
+<p>Be sure to select <strong>Bash</strong>. If necessary, configure the shell storage.</p>
+</li>
+<li>
+<p>Run the following command to create a virtual machine. When prompted, provide a username and password for the VM. While you wait check out the <a href="https://learn.microsoft.com/cli/azure/vm?view=azure-cli-latest#az-vm-create">az vm create</a> command reference for all the parameters associated with creating a virtual machine.</p>
+<p><code>sh
+az vm create --name myCLIVM --resource-group az104-rg8 --image Ubuntu2204 --admin-username localadmin --generate-ssh-keys</code></p>
+</li>
+<li>
+<p>Once the command completes, use <strong>az vm show</strong> to verify your machine was created.</p>
+<p><code>sh
+az vm show --name  myCLIVM --resource-group az104-rg8 --show-details</code></p>
+</li>
+<li>
+<p>Verify the <strong>powerState</strong> is <strong>VM Running</strong>.</p>
+</li>
+<li>
+<p>Use <strong>az vm deallocate</strong> to deallocate your virtual machine. Type <strong>Yes</strong> to confirm.</p>
+<p><code>sh
+az vm deallocate --resource-group az104-rg8 --name myCLIVM</code></p>
+</li>
+<li>
+<p>Use <strong>az vm show</strong> to ensure the <strong>powerState</strong> is <strong>VM deallocated</strong>.</p>
+<blockquote>
+<p><strong>Did you know?</strong> When you use Azure to stop your virtual machine, the status is <em>deallocated</em>. This means that any non-static public IPs are released, and you stop paying for the VM’s compute costs.</p>
+</blockquote>
+</li>
+</ol>
+<h2 id="cleanup-your-resources">Cleanup your Resources<a class="headerlink" href="#cleanup-your-resources" title="Permanent link">&para;</a></h2>
+<p>If you are working with <strong>your own subscription</strong> take a minute to delete the lab resources. This will ensure resources are freed up and cost is minimized. The easiest way to delete the lab resources is to delete the lab resource group. </p>
+<ul>
+<li>In the Azure portal, select the resource group, select <strong>Delete the resource group</strong>, <strong>Enter resource group name</strong>, and then click <strong>Delete</strong>.</li>
+<li>Using Azure PowerShell, <code>Remove-AzResourceGroup -Name resourceGroupName</code>.</li>
+<li>Using the CLI, <code>az group delete --name resourceGroupName</code>.</li>
+</ul>
+<h2 id="key-takeaways">Key Takeaways<a class="headerlink" href="#key-takeaways" title="Permanent link">&para;</a></h2>
+<p>Congratulations on completing the lab. Here are the main takeaways for this lab.</p>
+<ul>
+<li>Azure virtual machines are on-demand, scalable computing resources.</li>
+<li>Azure virtual machines provide both vertical and horizontal scaling options.</li>
+<li>Configuring Azure virtual machines includes choosing an operating system, size, storage and networking settings.</li>
+<li>Azure Virtual Machine Scale Sets let you create and manage a group of load balanced VMs.</li>
+<li>The virtual machines in a Virtual Machine Scale Set are created from the same image and configuration.</li>
+<li>In a Virtual Machine Scale Set the number of VM instances can automatically increase or decrease in response to demand or a defined schedule.</li>
+</ul>
+<hr />
+<div style="text-align: center; padding-top: 30px;">
+  <img src="/media/logo.png" alt="EduWe Logo" style="max-width: 150px; height: auto;"/>
+
+  <center><strong>Ceekh Edunix Pvt Ltd</strong></center><br>
+    Address: H-34, Ground Floor, Sector 63, Noida, Uttar Pradesh<br>
+    Email: <a href="mailto:info@ceekh.com" style="color: #007bff;">info@ceekh.com</a>
+  </p>
+  <p style="font-size: 14px; color: #555;"><center>© 2025 EduWe. All rights reserved.| Developed by Deepak Kumar Tyagi </center></p>
+</div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://www.linkedin.com" target="_blank" rel="noopener" title="LinkedIn" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5m282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://www.twitter.com" target="_blank" rel="noopener" title="Twitter" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://www.facebook.com" target="_blank" rel="noopener" title="Facebook" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256c0 120 82.7 220.8 194.2 248.5V334.2h-52.8V256h52.8v-33.7c0-87.1 39.4-127.5 125-127.5 16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287v175.9C413.8 494.8 512 386.9 512 256"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://www.youtube.com/@eduwe8400" target="_blank" rel="noopener" title="YouTube" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305m-317.51 213.508V175.185l142.739 81.205z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="mailto:info@ceekh.com" target="_blank" rel="noopener" title="Email" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4l217.6 163.2c11.4 8.5 27 8.5 38.4 0l217.6-163.2c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48zM0 176v208c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V176L294.4 339.2a63.9 63.9 0 0 1-76.8 0z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.expand", "header.autohide", "content.code.copy", "content.action.edit", "content.tooltips"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+    
+  </body>
+</html>

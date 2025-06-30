@@ -14,7 +14,7 @@ One of the most tedious tasks for a developer is setting up test environments. W
 
 **💡 Analogy:** Think of it like a chef walking into a kitchen where every ingredient is already laid out—just cook and serve!
 
-![Testing Environment Setup](/media/blog2.png)
+![Testing Environment Setup](../media/blog2.png)
 
 ---
 
@@ -28,7 +28,7 @@ No more manual ZIP uploads or FTP! Every time you push code, Azure handles the r
 
 **💡 Example:** At Adamantus Technologies, we use Azure Pipelines to automatically deploy internal tools every time a pull request is merged into the main branch. It saves nearly 6 hours of manual work each week!
 
-![CI/CD Pipeline Diagram](/media/blog1.png)
+![CI/CD Pipeline Diagram](../media/blog1.png)
 
 ---
 
@@ -40,11 +40,11 @@ Sometimes, you just want to expose a simple function—say, a webhook for paymen
 
 **💡 Use case:** A developer creates an Azure Function that resizes uploaded images on-the-fly. It scales automatically based on usage and costs only when executed.
 
-![Azure Functions Architecture](/media/blog3.png)
+![Azure Functions Architecture](../media/blog3.png)
 
 **💡 Analogy:** It’s like calling a cab exactly when you need it instead of buying your own car.
 
-![Azure Functions Analogy](/media/blog5.png)
+![Azure Functions Analogy](../media/blog5.png)
 
 ---
 
@@ -56,7 +56,7 @@ With **Azure App Services**, hosting a web app is as simple as pushing to Git. I
 
 **💡 Example:** A developer deploys a React app to an App Service connected to a GitHub repo. Every code commit to the “main” branch triggers a new deployment, followed by automated tests—no manual intervention needed.
 
-![Azure App Service Flow](/media/blog4.png)
+![Azure App Service Flow](../media/blog4.png)
 
 ---
 
@@ -68,8 +68,8 @@ So next time you deploy a feature with one click or spin up a test server in sec
 
 ----
 <div style="text-align: center; padding-top: 30px;">
-  <img src="/media/logo.png" alt="EduWe Logo" style="max-width: 150px; height: auto;"/>
-  
+  <img src="/images/logo.png" alt="EduWe Logo" style="max-width: 150px; height: auto;">
+  <p>
   <center><strong>Ceekh Edunix Pvt Ltd</strong></center><br>
     Address: H-34, Ground Floor, Sector 63, Noida, Uttar Pradesh<br>
     Email: <a href="mailto:info@ceekh.com" style="color: #007bff;">info@ceekh.com</a>

@@ -1,7 +1,7 @@
 # 🧠**Understanding Computer Networks: The Digital Nervous System**
 
 <div style="text-align: center; padding-top: 00px;">
-  <img src="/media/blog87.png" alt="CNT" style="max-width: 150px; height: auto;"/>
+  <img src="/images/blog87.png" alt="CNT" style="max-width: 150px; height: auto;"/>
 </div>
 
 In the digital age, computer networks act as the **nervous system** of our world—carrying data instead of neurons and connecting people, devices, and systems across the globe. From sending an email to streaming a movie, it's all powered by networking. Let’s break it down in the simplest way possible.
@@ -12,7 +12,7 @@ In the digital age, computer networks act as the **nervous system** of our world
 
 A computer network is a group of **interconnected devices** that can communicate and share resources. These resources might include files, internet access, printers, and even applications.
 
-![LAN Example](/media/blog81.png)
+![LAN Example](../media/blog81.png)
 ---
 
 ## 🌐 Types of Networks
@@ -23,7 +23,7 @@ A computer network is a group of **interconnected devices** that can communicate
 - Connects computers in close physical proximity.
 - Example: Computers connected in a classroom.
 
-![LAN Example1](/media/blog82.png)
+![LAN Example1](../media/blog82.png)
 
 ---
 ### 🔹 2. WAN (Wide Area Network)
@@ -32,7 +32,7 @@ A computer network is a group of **interconnected devices** that can communicate
 - The **Internet** is the largest example of a WAN.
 - It connects multiple LANs together.
 
-![WAN Example](/media/blog83.png)
+![WAN Example](../media/blog83.png)
 
 ---
 
@@ -41,7 +41,7 @@ A computer network is a group of **interconnected devices** that can communicate
 - Covers a **city or large campus**.
 - Example: A network connecting **libraries or government buildings** across a city.
 
-![MAN Example](/media/blog84.png)
+![MAN Example](../media/blog84.png)
 
 ---
 
@@ -50,7 +50,7 @@ A computer network is a group of **interconnected devices** that can communicate
 - Very small—used for **personal devices** like phones, tablets, and laptops via Bluetooth or USB.
 - Example: Phone connected to a wireless headset.
 
-![PAN Example](/media/blog85.png)
+![PAN Example](../media/blog85.png)
 
 ---
 
@@ -84,7 +84,7 @@ Think of a network like a **city's transportation system**:
 - **Router = Traffic cop**  
 - **Protocols = Traffic rules**  
 
-![Network as City Roads](/media/blog86.png)
+![Network as City Roads](../media/blog86.png)
 
 ---
 
@@ -98,8 +98,8 @@ Computer networks are everywhere—from your personal mobile phone to global dat
 
 ---
 <div style="text-align: center; padding-top: 30px;">
-  <img src="/media/logo.png" alt="EduWe Logo" style="max-width: 150px; height: auto;"/>
-  
+  <img src="/images/logo.png" alt="EduWe Logo" style="max-width: 150px; height: auto;">
+  <p>
   <center><strong>Ceekh Edunix Pvt Ltd</strong></center><br>
     Address: H-34, Ground Floor, Sector 63, Noida, Uttar Pradesh<br>
     Email: <a href="mailto:info@ceekh.com" style="color: #007bff;">info@ceekh.com</a>

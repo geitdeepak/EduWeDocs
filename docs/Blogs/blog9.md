@@ -4,7 +4,7 @@ In the world of networking, how does data move so seamlessly from your browser t
 The answer lies in the **OSI Model**—a conceptual framework that standardizes how data travels through a network. Whether you're studying computer networks or troubleshooting complex connectivity issues, understanding the OSI Model is fundamental.
 
 <div style="text-align: center; padding-top: 00px;">
-  <img src="/media/blog93.jpg" alt="CNT" style="max-width: 350px; height: auto;"/>
+  <img src="/images/blog93.jpg" alt="CNT" style="max-width: 350px; height: auto;"/>
 </div>
 
 ---
@@ -18,7 +18,7 @@ The **OSI (Open Systems Interconnection)** Model is a **seven-layer architecture
 Each layer of the OSI model is responsible for a distinct part of the communication process. Together, they break down complex network interactions into manageable parts.
 
 <div style="text-align: center; padding-top: 00px;">
-  <img src="/media/blog92.png" alt="OSI" style="max-width: 300px; height: auto;"/>
+  <img src="/images/blog92.png" alt="OSI" style="max-width: 300px; height: auto;"/>
 </div>
 
 ---
@@ -33,7 +33,7 @@ Each layer of the OSI model is responsible for a distinct part of the communicat
 - **Real-world Analogy**: You writing an email in Gmail.
 
 <div style="text-align: center; padding-top: 00px;">
-  <img src="/media/blog94.jpg" alt="AL" style="max-width: 550px; height: auto;"/>
+  <img src="/images/blog94.jpg" alt="AL" style="max-width: 550px; height: auto;"/>
 </div>
 ---
 #### **6. Presentation Layer**
@@ -44,7 +44,7 @@ Each layer of the OSI model is responsible for a distinct part of the communicat
 - **Analogy**: Translating a message into a language the recipient understands.
 
 <div style="text-align: center; padding-top: 00px;">
-  <img src="/media/blog95.png" alt="AL" style="max-width: 750px; height: auto;"/>
+  <img src="/images/blog95.png" alt="AL" style="max-width: 750px; height: auto;"/>
 </div>
 ---
 #### **5. Session Layer**
@@ -55,7 +55,7 @@ Each layer of the OSI model is responsible for a distinct part of the communicat
 - **Analogy**: Starting and ending a video call between two people.
 
 <div style="text-align: center; padding-top: 00px;">
-  <img src="/media/blog96.jpg" alt="AL" style="max-width: 750px; height: auto;"/>
+  <img src="/images/blog96.jpg" alt="AL" style="max-width: 750px; height: auto;"/>
 </div>
 ---
 #### **4. Transport Layer**
@@ -66,7 +66,7 @@ Each layer of the OSI model is responsible for a distinct part of the communicat
 - **Analogy**: Choosing a delivery method: courier with tracking (TCP) vs. a regular mail postcard (UDP).
 
 <div style="text-align: center; padding-top: 00px;">
-  <img src="/media/blog97.png" alt="AL" style="max-width: 650px; height: auto;"/>
+  <img src="/images/blog97.png" alt="AL" style="max-width: 650px; height: auto;"/>
 </div>
 
 ---
@@ -79,7 +79,7 @@ Each layer of the OSI model is responsible for a distinct part of the communicat
 - **Analogy**: Using GPS to find the best route to a destination across cities.
 
 <div style="text-align: center; padding-top: 00px;">
-  <img src="/media/blog98.jpg" alt="AL" style="max-width: 650px; height: auto;"/>
+  <img src="/images/blog98.jpg" alt="AL" style="max-width: 650px; height: auto;"/>
 </div>
 ---
 #### **2. Data Link Layer**
@@ -91,7 +91,7 @@ Each layer of the OSI model is responsible for a distinct part of the communicat
 - **Analogy**: Addressing and sealing an envelope before mailing it.
 
 <div style="text-align: center; padding-top: 00px;">
-  <img src="/media/blog99.jpg" alt="AL" style="max-width: 650px; height: auto;"/>
+  <img src="/images/blog99.jpg" alt="AL" style="max-width: 650px; height: auto;"/>
 </div>
 
 ---
@@ -104,7 +104,7 @@ Each layer of the OSI model is responsible for a distinct part of the communicat
 - **Analogy**: The actual road that the delivery truck travels on.
 
 <div style="text-align: center; padding-top: 00px;">
-  <img src="/media/blog99.png" alt="AL" style="max-width: 650px; height: auto;"/>
+  <img src="/images/blog99.png" alt="AL" style="max-width: 650px; height: auto;"/>
 </div>
 
 ---
@@ -165,8 +165,8 @@ The OSI Model isn’t just theory—it’s the **foundation of every email sent,
 
 ---
 <div style="text-align: center; padding-top: 30px;">
-  <img src="/media/logo.png" alt="EduWe Logo" style="max-width: 150px; height: auto;"/>
-  
+  <img src="/images/logo.png" alt="EduWe Logo" style="max-width: 150px; height: auto;">
+  <p>
   <center><strong>Ceekh Edunix Pvt Ltd</strong></center><br>
     Address: H-34, Ground Floor, Sector 63, Noida, Uttar Pradesh<br>
     Email: <a href="mailto:info@ceekh.com" style="color: #007bff;">info@ceekh.com</a>
