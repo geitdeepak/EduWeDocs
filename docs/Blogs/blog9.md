@@ -3,7 +3,7 @@
 In the world of networking, how does data move so seamlessly from your browser to a server across the globe and back in milliseconds? 
 The answer lies in the **OSI Model**—a conceptual framework that standardizes how data travels through a network. Whether you're studying computer networks or troubleshooting complex connectivity issues, understanding the OSI Model is fundamental.
 
-![CNT](../media/blog93.png)
+![CNT](../media/blog93.jpg)
 
 ---
 
