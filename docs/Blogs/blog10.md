@@ -2,9 +2,7 @@
 
 In today’s digital-first world, computing is no longer confined to bulky desktops or university labs. It has moved into an invisible yet omnipresent realm—the **cloud**. For academic institutions, particularly those focused on computer science, IT, business, or engineering, **Cloud Computing** is not just a buzzword—it's an essential component of modern curriculum and research.
 
-<div style="text-align: center; padding-top: 00px;">
-  <img src="/images/blog101.png" alt="clt" style="max-width: 650px; height: auto;"/>
-</div>
+![CLT](../media/blog101.png)
 
 This blog aims to give a comprehensive overview of Cloud Computing in the context of an academic course, highlighting key concepts, service models, deployment strategies, and practical use cases relevant for students and educators alike.
 
@@ -16,9 +14,8 @@ Cloud Computing refers to the **on-demand delivery of computing services**—inc
 
 > In academic terms, Cloud Computing is a model that enables **ubiquitous, convenient, on-demand network access** to a shared pool of configurable computing resources.
 
-<div style="text-align: center; padding-top: 00px;">
-  <img src="/images/blog102.png" alt="clt" style="max-width: 650px; height: auto;"/>
-</div>
+![CLT](../media/blog102.png)
+
 ---
 
 ## 🏛️ Why Teach Cloud Computing in Academia?
@@ -35,9 +32,8 @@ Access to virtual machines, data lakes, and cloud AI services empower students t
 ---
 ## 🔍 Benefits of Cloud Computing 
 
-<div style="text-align: center; padding-top: 00px;">
-  <img src="/images/blog104.jpg" alt="clt" style="max-width: 650px; height: auto;"/>
-</div>
+![CLT](../media/blog104.jpg)
+
 
 ## 🔍 Core Concepts Covered in a Cloud Computing Course
 
@@ -65,9 +61,7 @@ Gives students tools to develop, test, and deploy apps.
 Delivers ready-to-use software over the web.  
 📧 *Example: Using Microsoft 365 for assignments and communication.*
 
-<div style="text-align: center; padding-top: 00px;">
-  <img src="/images/blog103.png" alt="clt" style="max-width: 650px; height: auto;"/>
-</div>
+![CLT](../media/blog103.png)
 
 ---
 

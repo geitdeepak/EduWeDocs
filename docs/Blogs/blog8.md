@@ -1,8 +1,6 @@
 # 🧠**Understanding Computer Networks: The Digital Nervous System**
 
-<div style="text-align: center; padding-top: 00px;">
-  <img src="/images/blog87.png" alt="CNT" style="max-width: 150px; height: auto;"/>
-</div>
+![CNT](../media/blog87.png)
 
 In the digital age, computer networks act as the **nervous system** of our world—carrying data instead of neurons and connecting people, devices, and systems across the globe. From sending an email to streaming a movie, it's all powered by networking. Let’s break it down in the simplest way possible.
 
