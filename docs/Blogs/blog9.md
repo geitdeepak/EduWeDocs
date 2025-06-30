@@ -152,11 +152,11 @@ The OSI Model isn’t just theory—it’s the **foundation of every email sent,
 
 ---
 <div style="text-align: center; padding-top: 30px;">
-  <img src="media/logo.png" alt="EduWe Logo" style="max-width: 150px; height: auto;">
-  <p>
-  <center><strong>Ceekh Edunix Pvt Ltd</strong></center><br>
+  <img src="media/logo.png" alt="EduWe Logo" style="max-width: 150px; height: auto; display: block; margin: 0 auto;">
+  <p style="margin-top: 10px;">
+    <strong>Ceekh Edunix Pvt Ltd</strong><br>
     Address: H-34, Ground Floor, Sector 63, Noida, Uttar Pradesh<br>
     Email: <a href="mailto:info@ceekh.com" style="color: #007bff;">info@ceekh.com</a>
   </p>
-  <p style="font-size: 14px; color: #555;"><center>© 2025 EduWe. All rights reserved.| Developed by Deepak Kumar Tyagi </center></p>
+  <p style="font-size: 14px; color: #555;">© 2025 EduWe. All rights reserved. | Developed by Deepak Kumar Tyagi</p>
 </div>
