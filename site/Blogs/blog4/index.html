@@ -1976,11 +1976,11 @@
 <li><strong>Basic Load Balancer</strong>: Ideal for dev/test or single-region apps.</li>
 <li><strong>Standard Load Balancer</strong>: Production-ready, secure, and zone-redundant—supports more features like higher scalability and metrics.</li>
 </ul>
-<p><img alt="Public Load Balancer" src="/media/blog44.png" /></p>
+<p><img alt="Public Load Balancer" src="../../media/blog44.png" /></p>
 <hr />
 <h2 id="analogy-load-balancer-as-a-restaurant-host">🧠 Analogy: Load Balancer as a Restaurant Host<a class="headerlink" href="#analogy-load-balancer-as-a-restaurant-host" title="Permanent link">&para;</a></h2>
 <p>Imagine a busy restaurant with several servers. A host greets each guest and decides which table (server) they should go to, depending on who’s available and how busy they are. Azure Load Balancer does the same—it receives incoming traffic and forwards it to the least busy and healthy backend instance.</p>
-<p><img alt="Analogy" src="/media/blog41.png" /></p>
+<p><img alt="Analogy" src="../../media/blog41.png" /></p>
 <hr />
 <h2 id="core-components">🛠️ Core Components<a class="headerlink" href="#core-components" title="Permanent link">&para;</a></h2>
 <p>Before jumping into the configuration, let’s understand the 3 key pieces of an Azure Load Balancer:</p>
@@ -2008,7 +2008,7 @@
 <li>Public or Internal (based on your use case)</li>
 <li>Choose your Resource Group and Region</li>
 </ol>
-<p><img alt="Create Load Balancer" src="/media/blog45.png" /></p>
+<p><img alt="Create Load Balancer" src="../../media/blog45.png" /></p>
 <hr />
 <h3 id="step-2-define-the-backend-pool">🔗 Step 2: Define the Backend Pool<a class="headerlink" href="#step-2-define-the-backend-pool" title="Permanent link">&para;</a></h3>
 <ol>
@@ -2016,7 +2016,7 @@
 <li>Click <strong>Add</strong></li>
 <li>Select the virtual machines (VM1, VM2...) you want to include</li>
 </ol>
-<p><img alt="backend pool" src="/media/blog42.png" /></p>
+<p><img alt="backend pool" src="../../media/blog42.png" /></p>
 <hr />
 <h3 id="step-3-configure-health-probes">💓 Step 3: Configure Health Probes<a class="headerlink" href="#step-3-configure-health-probes" title="Permanent link">&para;</a></h3>
 <ol>
@@ -2035,7 +2035,7 @@
 <li>Session persistence (optional)</li>
 <li>Associate with health probe and backend pool</li>
 </ol>
-<p><img alt="healthprobe" src="/media/blog43.png" /></p>
+<p><img alt="healthprobe" src="../../media/blog43.png" /></p>
 <hr />
 <h3 id="step-5-install-iis-on-azure-virtual-machines">🌐 Step 5: Install IIS on Azure Virtual Machines<a class="headerlink" href="#step-5-install-iis-on-azure-virtual-machines" title="Permanent link">&para;</a></h3>
 <p>Follow the steps below to install IIS and set up a custom <code>iisstart.htm</code> file on Azure VMs.</p>
@@ -2080,7 +2080,7 @@
 <li>Azure will route requests to available healthy VMs</li>
 <li>Stop one VM and reload—traffic is redirected to the healthy one (thanks to health probes!)</li>
 </ol>
-<p><img alt="Test Load Balancer" src="/media/blog46.png" /></p>
+<p><img alt="Test Load Balancer" src="../../media/blog46.png" /></p>
 <hr />
 <h2 id="bonus-monitoring-and-metrics">📈 Bonus: Monitoring and Metrics<a class="headerlink" href="#bonus-monitoring-and-metrics" title="Permanent link">&para;</a></h2>
 <p>Use <strong>Azure Monitor</strong> or <strong>Log Analytics</strong> to:</p>
@@ -2096,8 +2096,8 @@
 <p>So go ahead—deploy your VMs, configure Azure Load Balancer, and let the cloud handle the traffic.</p>
 <hr />
 <div style="text-align: center; padding-top: 30px;">
-  <img src="/media/logo.png" alt="EduWe Logo" style="max-width: 150px; height: auto;"/>
-
+  <img src="/images/logo.png" alt="EduWe Logo" style="max-width: 150px; height: auto;">
+  <p>
   <center><strong>Ceekh Edunix Pvt Ltd</strong></center><br>
     Address: H-34, Ground Floor, Sector 63, Noida, Uttar Pradesh<br>
     Email: <a href="mailto:info@ceekh.com" style="color: #007bff;">info@ceekh.com</a>

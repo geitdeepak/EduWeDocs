@@ -67,7 +67,7 @@ We are here to help you! Please fill out the form below with any inquiries or fe
 ---
 
 <div style="text-align: center; padding-top: 30px; font-family: 'Segoe UI', sans-serif;">
-  <img src="/media/logo.png" alt="EduWe Logo" style="max-width: 150px; height: auto; margin-bottom: 10px;"/>
+  <img src="media/logo.png" alt="EduWe Logo" style="max-width: 150px; height: auto; margin-bottom: 10px;"/>
 
   <p><strong>Ceekh Edunix Pvt Ltd</strong><br>
   Address: H-34, Ground Floor, Sector 63, Noida, Uttar Pradesh<br>

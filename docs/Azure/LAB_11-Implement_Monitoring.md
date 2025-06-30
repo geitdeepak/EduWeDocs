@@ -263,7 +263,7 @@ Congratulations on completing the lab. Here are the main takeaways for this lab.
 + Action groups include individuals that should be notified of an alert.
 ---
 <div style="text-align: center; padding-top: 30px;">
-  <img src="/images/logo.png" alt="EduWe Logo" style="max-width: 150px; height: auto;">
+  <img src="../media/logo.png" alt="EduWe Logo" style="max-width: 150px; height: auto;">
   <p>
   <center><strong>Ceekh Edunix Pvt Ltd</strong></center><br>
     Address: H-34, Ground Floor, Sector 63, Noida, Uttar Pradesh<br>

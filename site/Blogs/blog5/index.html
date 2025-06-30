@@ -1847,7 +1847,7 @@
 <h1 id="best-practices-for-designing-secure-azure-solutions">🔐 <strong>Best Practices for Designing Secure Azure Solutions</strong><a class="headerlink" href="#best-practices-for-designing-secure-azure-solutions" title="Permanent link">&para;</a></h1>
 <p>In today’s digital world, <strong>security is no longer optional</strong>—it’s the foundation of trust. Whether you're building a small web app or a mission-critical enterprise solution, <strong>designing with security in mind from day one</strong> ensures your Azure solutions remain resilient against evolving threats.</p>
 <p>Microsoft Azure offers a comprehensive set of security features—but knowing when and how to use them effectively is key. This blog walks you through <strong>core best practices</strong> like firewalls, NSGs, RBAC, managed identities, and Microsoft’s built-in recommendations so that your cloud architecture stays secure, scalable, and compliant.</p>
-<p><img alt="Security" src="/media/blog51.png" /></p>
+<p><img alt="Security" src="../../media/blog51.png" /></p>
 <hr />
 <h2 id="security-first-the-mindset">🧠 Security First: The Mindset<a class="headerlink" href="#security-first-the-mindset" title="Permanent link">&para;</a></h2>
 <p>Think of Azure security like securing a building:
@@ -1865,7 +1865,7 @@
 <li><strong>Deny public access by default</strong> — Use private endpoints when possible.</li>
 <li><strong>Enable logging</strong> to track access attempts.</li>
 </ul>
-<p><img alt="Firewall" src="/media/blog52.png" /></p>
+<p><img alt="Firewall" src="../../media/blog52.png" /></p>
 <p>🧪 <strong><em>Example:</em></strong> For Azure Storage, disable “Allow All Networks” and explicitly whitelist the backend subnet or developer workstation IPs.</p>
 <hr />
 <h2 id="2-secure-subnets-with-network-security-groups-nsgs">🚦 2. Secure Subnets with Network Security Groups (NSGs)<a class="headerlink" href="#2-secure-subnets-with-network-security-groups-nsgs" title="Permanent link">&para;</a></h2>
@@ -1876,7 +1876,7 @@
 <li>Use <strong>least privilege</strong>—only open required ports (e.g., 443, 22).</li>
 <li>Monitor NSG rules regularly for unnecessary openings.</li>
 </ul>
-<p><img alt="Security" src="/media/blog53.png" /></p>
+<p><img alt="Security" src="../../media/blog53.png" /></p>
 <p>🔒 <strong><em>Example:</em></strong> Block all inbound traffic except port 443 for your App Gateway subnet.</p>
 <hr />
 <h2 id="3-apply-role-based-access-control-rbac">👥 3. Apply Role-Based Access Control (RBAC)<a class="headerlink" href="#3-apply-role-based-access-control-rbac" title="Permanent link">&para;</a></h2>
@@ -1887,7 +1887,7 @@
 <li><strong>Avoid assigning at the subscription level</strong>—use Resource Groups for scoped access.</li>
 <li><strong>Review access logs</strong> regularly using Azure Activity Logs or Defender for Cloud.</li>
 </ul>
-<p><img alt="Security" src="/media/blog54.png" /></p>
+<p><img alt="Security" src="../../media/blog54.png" /></p>
 <p>👨‍💻 <strong><em>Example:</em></strong> Give your app developer team “Contributor” role only on the WebApp resource group—not the whole subscription.</p>
 <hr />
 <h2 id="4-use-managed-identities-for-secure-app-access">🆔 4. Use Managed Identities for Secure App Access<a class="headerlink" href="#4-use-managed-identities-for-secure-app-access" title="Permanent link">&para;</a></h2>
@@ -1898,7 +1898,7 @@
 <li>Use it to authenticate to <strong>Key Vault, Azure SQL, Storage</strong>, etc.</li>
 <li>Avoid using hard-coded credentials or storing secrets in config files.</li>
 </ul>
-<p><img alt="Security" src="/media/blog55.png" /></p>
+<p><img alt="Security" src="../../media/blog55.png" /></p>
 <p>🔑 <strong><em>Example:</em></strong> An App Service accesses a Key Vault secret using its managed identity—no password needed, and it rotates automatically.</p>
 <hr />
 <h2 id="5-follow-microsofts-security-recommendations">🛡️ 5. Follow Microsoft’s Security Recommendations<a class="headerlink" href="#5-follow-microsofts-security-recommendations" title="Permanent link">&para;</a></h2>
@@ -1912,7 +1912,7 @@
 <li>Enable <strong>Just-In-Time VM access</strong> to reduce attack surface.</li>
 <li>Use <strong>Defender for Endpoint and Defender for Identity</strong> for advanced protection.</li>
 </ul>
-<p><img alt="Security" src="/media/blog56.png" /></p>
+<p><img alt="Security" src="../../media/blog56.png" /></p>
 <p>📈 <strong><em>Example:</em></strong> If Security Center recommends enabling encryption at rest on a storage account—apply it immediately using the Azure Policy.</p>
 <hr />
 <h2 id="conclusion">💡 Conclusion<a class="headerlink" href="#conclusion" title="Permanent link">&para;</a></h2>
@@ -1921,8 +1921,8 @@
 <p>So, whether you're developing your first Azure app or managing a production environment—<strong>start secure, stay secure.</strong> The cloud may be shared, but <strong>your responsibility for protecting your resources is not.</strong></p>
 <hr />
 <div style="text-align: center; padding-top: 30px;">
-  <img src="/media/logo.png" alt="EduWe Logo" style="max-width: 150px; height: auto;"/>
-
+  <img src="/images/logo.png" alt="EduWe Logo" style="max-width: 150px; height: auto;">
+  <p>
   <center><strong>Ceekh Edunix Pvt Ltd</strong></center><br>
     Address: H-34, Ground Floor, Sector 63, Noida, Uttar Pradesh<br>
     Email: <a href="mailto:info@ceekh.com" style="color: #007bff;">info@ceekh.com</a>
