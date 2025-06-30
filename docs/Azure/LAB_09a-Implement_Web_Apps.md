@@ -1,7 +1,7 @@
 ---
-lab:
-    title: 'Lab 09a: Implement Web Apps'
-    module: 'Administer PaaS Compute Options'
+Lab:
+    Title: 'Lab 09a: Implement Web Apps'
+    Module: 'Administer PaaS Compute Options'
 ---
 
 # Lab - Implement Web Apps

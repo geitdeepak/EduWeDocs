@@ -1,7 +1,7 @@
 ---
-lab:
-    title: 'Lab : Manage Governance via Azure Policy'
-    module: 'Administer Governance and Compliance'
+Lab:
+    Title: 'Lab : Manage Governance via Azure Policy'
+    Module: 'Administer Governance and Compliance'
 ---
 
 # Lab - Manage Governance via Azure Policy

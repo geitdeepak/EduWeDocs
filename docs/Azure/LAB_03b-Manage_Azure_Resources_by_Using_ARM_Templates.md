@@ -1,7 +1,7 @@
 ---
-lab:
-    title: 'Lab : Manage Azure Resources by using Azure Resource Manager Templates'
-    module: 'Administer Azure Resources'
+Lab:
+    Title: 'Lab : Manage Azure Resources by using Azure Resource Manager Templates'
+    Module: 'Administer Azure Resources'
 ---
 
 # Lab - Manage Azure Resources by using Azure Resource Manager Templates

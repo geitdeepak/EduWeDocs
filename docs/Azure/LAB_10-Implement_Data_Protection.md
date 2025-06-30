@@ -1,7 +1,7 @@
 ---
-lab:
-    title: 'Lab 10: Implement Data Protection'
-    module: 'Administer Data Protection'
+Lab:
+    Title: 'Lab 10: Implement Data Protection'
+    Module: 'Administer Data Protection'
 ---
 
 # Lab - Implement Data Protection

@@ -1,7 +1,7 @@
 ---
-lab:
-    title: 'Lab 01: Manage Microsoft Entra ID Identities'
-    module: 'Administer Identity'
+Lab:
+    Title: 'Lab 01: Manage Microsoft Entra ID Identities'
+    Module: 'Administer Identity'
 ---
 
 # Lab - Manage Microsoft Entra ID Identities

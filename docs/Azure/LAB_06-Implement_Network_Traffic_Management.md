@@ -1,7 +1,7 @@
 ---
-lab:
-    title: 'Lab 06: Implement Network Traffic Management'
-    module: 'Administer Network Traffic Management'
+Lab:
+    Title: 'Lab 06: Implement Network Traffic Management'
+    Module: 'Administer Network Traffic Management'
 ---
 
 # Lab - Implement Network Traffic Management

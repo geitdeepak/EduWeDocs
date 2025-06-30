@@ -1,7 +1,7 @@
 ---
-lab:
-    title: 'Lab 09b: Implement Azure Container Instances'
-    module: 'Administer PaaS Compute Options'
+Lab:
+    Title: 'Lab 09b: Implement Azure Container Instances'
+    Module: 'Administer PaaS Compute Options'
 ---
 
 # Lab - Implement Azure Container Instances (ACI)
